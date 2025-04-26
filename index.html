@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudeep Kumar - Resume</title>
+    <title>Suds Kumar - Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #0366d6;
+            --primary-color: #4285F4; /* Google Cloud blue */
             --secondary-color: #24292e;
             --light-color: #f6f8fa;
             --text-color: #24292e;
@@ -79,6 +79,20 @@
             margin-bottom: 15px;
         }
         
+        .contact-info {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info span {
+            margin-right: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 5px;
+        }
+        
         .social-links {
             display: flex;
             gap: 15px;
@@ -122,22 +136,22 @@
             background-color: var(--primary-color);
         }
         
-        .job, .education-item, .skill-category, .project {
+        .job, .education-item, .skill-category, .project, .certification-item {
             margin-bottom: 30px;
         }
         
-        .job:last-child, .education-item:last-child, .skill-category:last-child, .project:last-child {
+        .job:last-child, .education-item:last-child, .skill-category:last-child, .project:last-child, .certification-item:last-child {
             margin-bottom: 0;
         }
         
-        .job-header, .edu-header, .project-header {
+        .job-header, .edu-header, .project-header, .cert-header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
             flex-wrap: wrap;
         }
         
-        .job-title, .degree, .project-name {
+        .job-title, .degree, .project-name, .cert-name {
             font-size: 1.3rem;
             font-weight: bold;
             color: var(--primary-color);
@@ -151,6 +165,12 @@
             color: #586069;
         }
         
+        .location {
+            font-style: italic;
+            color: #586069;
+            margin-top: 5px;
+        }
+        
         .job-desc, .edu-desc, .project-desc {
             margin-top: 10px;
         }
@@ -161,7 +181,7 @@
         }
         
         .job-desc li, .project-desc li {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
         
         .skills-grid {
@@ -189,16 +209,15 @@
             font-size: 0.9rem;
         }
         
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
+        .highlight-tag {
+            background-color: rgba(66, 133, 244, 0.1);
+            border: 1px solid var(--primary-color);
         }
         
-        .project-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         
         footer {
@@ -224,7 +243,7 @@
                 justify-content: center;
             }
             
-            .job-header, .edu-header, .project-header {
+            .job-header, .edu-header, .project-header, .cert-header {
                 flex-direction: column;
             }
             
@@ -232,8 +251,18 @@
                 margin-top: 5px;
             }
             
-            .skills-grid, .projects-grid {
+            .skills-grid, .certifications-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-info span {
+                margin-bottom: 8px;
             }
         }
     </style>
@@ -242,14 +271,18 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="/api/placeholder/150/150" alt="Sudeep Kumar" class="profile-pic">
+                <img src="/api/placeholder/150/150" alt="Suds Kumar" class="profile-pic">
                 <div class="header-text">
-                    <h1>Sudeep Kumar</h1>
-                    <p class="tagline">Senior Software Developer | Tech Lead | Java, Big Data & Cloud Solutions</p>
+                    <h1>Suds Kumar</h1>
+                    <p class="tagline">Google Cloud Solution Architect | Pre-Sales | Go-To-Market | Consulting | Advisory | Data & AI | 5xGCP</p>
+                    <div class="contact-info">
+                        <span><i class="fas fa-map-marker-alt"></i> Watford, London Area, UK</span>
+                        <span><i class="fas fa-phone"></i> 07933020075</span>
+                        <span><i class="fas fa-envelope"></i> suds123@gmail.com</span>
+                    </div>
                     <div class="social-links">
                         <a href="https://github.com/sudsk" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/sudskumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -259,7 +292,10 @@
     <section class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Experienced software professional with expertise in Java, Big Data technologies, and cloud computing. Passionate about building scalable solutions and leading engineering teams to deliver high-quality software products. Strong technical leadership with a focus on performance optimization and architectural design.</p>
+            <p>I am a Data Cloud expert and technologist who enjoys solving complex data & design challenges and architecting and engineering solutions on Cloud. With extensive experience in advising and architecting for customers in cloud data transformation, I provide solutions and recommendations for making the best use of the Cloud platform.</p>
+            <p>My expertise spans solutions architecture, data engineering, data platform infrastructure, databases, data ingestion, data strategy & roadmap, data warehouse, data lakes, data modeling, data migration, data movement, data governance, metadata management, data provenance, data mesh, data virtualisation, data catalog, analytics & insights, AI & ML, DevOps, and security.</p>
+            <p>I lead data technology consulting, thought leadership, technical evangelism, design sessions, solution workshops, and architecture engagements for Financial Services customers. I'm also experienced in pre-sales, go-to-market offerings, assets, products & solutions, ideation, working with product managers, enhancements & innovations.</p>
+            <p>I bring best practices and experience from various industries including Payments, Investment Banking, Telecommunications, Leasing & Financing, Retail, and more.</p>
         </div>
     </section>
     
@@ -269,32 +305,176 @@
             
             <div class="job">
                 <div class="job-header">
-                    <div class="job-title">Senior Software Engineer</div>
-                    <div class="date">2020 - Present</div>
+                    <div class="job-title">Senior GCP Architect</div>
+                    <div class="date">August 2023 - Present</div>
                 </div>
-                <div class="company">Tech Company</div>
+                <div class="company">EPAM Systems</div>
+                <div class="location">London, England, United Kingdom</div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Data Lead | GCP Architect | Director | Financial Services</div>
+                    <div class="date">May 2021 - July 2023</div>
+                </div>
+                <div class="company">Capgemini</div>
+                <div class="location">London, England, United Kingdom</div>
                 <div class="job-desc">
                     <ul>
-                        <li>Led development of scalable data processing pipelines using Apache Spark and Hadoop.</li>
-                        <li>Designed and implemented cloud-native applications on AWS, optimizing for cost and performance.</li>
-                        <li>Mentored junior developers and conducted code reviews to ensure high-quality deliverables.</li>
-                        <li>Collaborated with cross-functional teams to define technical requirements and architecture.</li>
+                        <li>Drove accelerated growth in Capgemini global Google Cloud portfolio and advised customers in making the best use of the GCP platform</li>
+                        <li>Created GCP data offering and solutions for Capgemini Financial Services</li>
+                        <li>Led GCP chapter of tech practitioners in UK</li>
+                        <li>Led technology consulting and architecture engagements through pre-sales phase for Financial Services customers</li>
                     </ul>
                 </div>
             </div>
             
             <div class="job">
                 <div class="job-header">
-                    <div class="job-title">Software Engineer</div>
-                    <div class="date">2017 - 2020</div>
+                    <div class="job-title">Senior Cloud Architect | Data Tech & Analytics</div>
+                    <div class="date">June 2019 - May 2021</div>
                 </div>
-                <div class="company">Previous Company</div>
+                <div class="company">Sky</div>
+                <div class="location">London, United Kingdom</div>
                 <div class="job-desc">
                     <ul>
-                        <li>Developed and maintained Java-based microservices with Spring Boot.</li>
-                        <li>Implemented RESTful APIs and data integration solutions.</li>
-                        <li>Participated in Agile development cycles, from requirement gathering to deployment.</li>
-                        <li>Improved application performance by 30% through code optimization and database tuning.</li>
+                        <li>Accountable for the design of Google Cloud Platform solutions, and other on-prem platforms, to meet Sky's objective to use data for the benefit of our customers and internal stakeholders by designing platforms that store and process data</li>
+                        <li>Delivered Jobs-as-code automation, which significantly reduced time by 70% for productionizing workflows</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Data Solution Architect | Digital</div>
+                    <div class="date">March 2016 - June 2019</div>
+                </div>
+                <div class="company">Worldpay</div>
+                <div class="location">London, United Kingdom</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Redesigned Digital POS (point-of-sale) backend database and REST APIs which improved the performance of the application by 40%</li>
+                        <li>Designed data architecture and integration of Digital Platform with New Acquiring Platform</li>
+                        <li>Led the architecture, design and implementation of key portal based strategic products such as merchant dashboard and point-of-sale application</li>
+                        <li>Contributed to portals and data related strategy road mapping</li>
+                        <li>Architected and designed data movements through messaging, ETL, application transformations</li>
+                        <li>A key member of the Data Working Group and Technical Design Authority boards</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Tech Architect | BI & Big Data</div>
+                    <div class="date">January 2013 - February 2016</div>
+                </div>
+                <div class="company">Infosys</div>
+                <div class="location">London, United Kingdom</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Positioned and designed solutions for financial services customers with Infosys Big Data platform and services; involved in 6 pre-sales opportunities, with 4 converting into the sale of Infosys services</li>
+                        <li>Designed Data Archival (WORM) platform for Investment Banking client resulting in client able to comply with Dodd-Frank Record retention regulations within six months, thereby avoiding the risk of penalties</li>
+                        <li>Designed EU Financial Transaction Tax reporting solution for Investment Banking client, allowing the client to report and pay tax, thereby avoiding the risk of penalties</li>
+                        <li>Led Finance, Risk, Treasury Analytics for retail banking giant under their multi-million transformation programme of their retail banking business</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Business Intelligence Architect</div>
+                    <div class="date">January 2011 - January 2013</div>
+                </div>
+                <div class="company">Peak Indicators Limited</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>UK wide Oracle BI Consulting in the areas of OBIEE, OBIA, Informatica and ODI</li>
+                        <li>Conducted 5 Oracle University training programs for ODI 10g & 11g</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Business Intelligence Solution Architect</div>
+                    <div class="date">June 2010 - November 2010</div>
+                </div>
+                <div class="company">Logica</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Involved in pre-sales and BI practice support</li>
+                        <li>Customer presentations, demos & workshops in Logica's Oracle BI capabilities</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Business Intelligence Specialist</div>
+                    <div class="date">April 2009 - May 2010</div>
+                </div>
+                <div class="company">Wm Morrison Supermarkets Plc</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Implemented Retail EDW using foundation model provided by ORDM (Oracle Retail Data Model)</li>
+                        <li>The system used ODI & PL/SQL as ETL and OBIEE as Reporting tools and provided advanced Analytics capabilities using Oracle OLAP and Data Mining</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Consultant | BI/DW</div>
+                    <div class="date">March 2008 - April 2009</div>
+                </div>
+                <div class="company">Oracle</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>EMEA + APAC customer consulting in BI & DW area</li>
+                        <li>Key projects: DataHub solution for H3G (Milan, Italy), MIS Reporting Solution for Wilkinson (UK), Corporate Reporting Solution for Romtelecom (Romania), DW Architect for BCR Bank (Romania), Solution Assessment for Raiffeisen Bank (Romania), DW Health Check for MTRC (Hong Kong), Oracle Mobile Knowledge Solution for Celtel</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Technical Architect</div>
+                    <div class="date">June 2006 - February 2008</div>
+                </div>
+                <div class="company">Tech Mahindra</div>
+                <div class="location">London, United Kingdom, Hon-Atsugi, Japan</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Service provisioning and service delivery datamarts and dashboards using OWB & OBIEE tools at British Telecom Global Services, UK</li>
+                        <li>CRM Data Hub, Single View, CRM for Sky Broadband Launch - for ClarityBlue, UK</li>
+                        <li>Supply Chain Management Data Hub for Nissan, Japan using Ab-Initio</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Advisiory IT Specialist</div>
+                    <div class="date">December 2004 - June 2006</div>
+                </div>
+                <div class="company">IBM Global Services</div>
+                <div class="location">Kolkata, India</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Enterprise Data Warehouse for AOL using Ab-Initio, Netezza, Redbrick, Perl</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">System Analyst</div>
+                    <div class="date">September 2000 - October 2004</div>
+                </div>
+                <div class="company">Churchill Insurance</div>
+                <div class="job-desc">
+                    <ul>
+                        <li>Data integration, Batch & MIS projects using PL/SQL and Pro*C for Churchill Insurance, UK</li>
                     </ul>
                 </div>
             </div>
@@ -307,12 +487,45 @@
             
             <div class="education-item">
                 <div class="edu-header">
-                    <div class="degree">Bachelor of Technology in Computer Science</div>
-                    <div class="date">2013 - 2017</div>
+                    <div class="degree">MBA, Finance</div>
+                    <div class="date">2010 - 2013</div>
                 </div>
-                <div class="school">University Name</div>
-                <div class="edu-desc">
-                    <p>Graduated with honors. Focused on software engineering, data structures, and algorithms.</p>
+                <div class="school">Amity University</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="edu-header">
+                    <div class="degree">Executive Program in Business Management, General Management</div>
+                    <div class="date">2005 - 2006</div>
+                </div>
+                <div class="school">Indian Institute of Management, Calcutta</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="edu-header">
+                    <div class="degree">Bachelor of Engineering (Honours), Computer Science & Engineering</div>
+                    <div class="date">1996 - 2000</div>
+                </div>
+                <div class="school">Utkal University</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="cert-name">Oracle 11g Data Warehousing Certified Implementation Specialist</div>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-name">Oracle Business Intelligence Certified Implementation Specialist</div>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-name">PRINCE2 Foundation</div>
                 </div>
             </div>
         </div>
@@ -324,90 +537,62 @@
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Top Skills</h3>
                     <div class="skills-list">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Scala</span>
+                        <span class="skill-tag highlight-tag">Data Migration</span>
+                        <span class="skill-tag highlight-tag">Machine Learning</span>
+                        <span class="skill-tag highlight-tag">Vertex AI</span>
+                        <span class="skill-tag highlight-tag">Google Cloud Platform</span>
+                        <span class="skill-tag highlight-tag">Solution Architecture</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
+                    <h3>Cloud & Infrastructure</h3>
                     <div class="skills-list">
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Hibernate</span>
-                        <span class="skill-tag">Apache Spark</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Google Cloud Platform (GCP)</span>
+                        <span class="skill-tag">Cloud Architecture</span>
+                        <span class="skill-tag">Data Platform Infrastructure</span>
+                        <span class="skill-tag">Cloud Migration</span>
+                        <span class="skill-tag">DevOps</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
+                    <h3>Data Technologies</h3>
                     <div class="skills-list">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                        <span class="skill-tag">Data Lakes</span>
+                        <span class="skill-tag">Data Modeling</span>
+                        <span class="skill-tag">ETL/ELT</span>
+                        <span class="skill-tag">Data Governance</span>
+                        <span class="skill-tag">Metadata Management</span>
+                        <span class="skill-tag">Data Mesh</span>
+                        <span class="skill-tag">Data Virtualization</span>
+                        <span class="skill-tag">Data Catalog</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Database Technologies</h3>
+                    <h3>AI & Analytics</h3>
                     <div class="skills-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Cassandra</span>
-                        <span class="skill-tag">Redis</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project">
-                    <div class="project-header">
-                        <div class="project-name">Data Processing Pipeline</div>
-                    </div>
-                    <div class="project-desc">
-                        <p>Built a scalable data processing pipeline using Apache Spark that processes terabytes of data daily.</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
+                        <span class="skill-tag">Vertex AI</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Business Intelligence</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">BigQuery</span>
                     </div>
                 </div>
                 
-                <div class="project">
-                    <div class="project-header">
-                        <div class="project-name">Cloud Migration Framework</div>
-                    </div>
-                    <div class="project-desc">
-                        <p>Developed a framework to streamline migration of on-premises applications to AWS cloud infrastructure.</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project">
-                    <div class="project-header">
-                        <div class="project-name">Microservices Architecture</div>
-                    </div>
-                    <div class="project-desc">
-                        <p>Designed and implemented a microservices-based application using Spring Boot and Docker.</p>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
+                <div class="skill-category">
+                    <h3>Business & Consulting</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Pre-Sales</span>
+                        <span class="skill-tag">Go-To-Market Strategy</span>
+                        <span class="skill-tag">Solution Design</span>
+                        <span class="skill-tag">Technical Leadership</span>
+                        <span class="skill-tag">Data Strategy</span>
+                        <span class="skill-tag">Financial Services</span>
                     </div>
                 </div>
             </div>
@@ -416,7 +601,7 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 Sudeep Kumar. All rights reserved.</p>
+            <p>&copy; 2025 Suds Kumar. All rights reserved.</p>
         </div>
     </footer>
 </body>
